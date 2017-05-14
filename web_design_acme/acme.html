@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Acme Web Design - Affordable Web Design</title>
+
+    <style>
+    body {
+      margin:0;
+      padding:0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      background-color: lightgrey;
+    }
+
+    /* GLOBAL */
+    .container {
+      width:80%;
+      margin:auto;
+      overflow:hidden;
+    }
+    ul{
+      margin:0;
+      padding:0;
+    }
+    .button_1 {
+      height:38px;
+      padding-left: 20px;
+      padding-right:20px;
+      background-color: orange;
+      color:white;
+      border:0;
+    }
+
+
+    /* HEADER */
+    header{
+      background-color:darkgrey;
+      color:white;
+      min-height: 70px;
+      padding-top:30px;
+      border-bottom:orange 3px solid;
+    }
+    header #branding {
+      float:left;
+    }
+    header #branding h1 {
+      margin:0;
+    }
+    header nav {
+      margin-top: 10px;
+      float:right;
+    }
+
+    header li{
+      //float:left;
+      padding: 0 20px 0 20px;
+      display:inline;
+    }
+    header a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size:16px;
+    }
+
+    header #highlight, header .current a{
+      color:orange;
+      font-weight: bold;
+
+    }
+    header a:hover {
+      color: #ccc;
+      font-weight: bold;
+    }
+
+
+    /* SHOWCASE */
+    #showcase {
+      background: url("img/showcase.jpg") no-repeat 0 -400px;
+      min-height:400px;
+      text-align: center;
+      color:white;
+    }
+    #showcase h1 {
+      margin-top:100px;
+      font-size:50px;
+      margin-bottom:15px;
+
+    }
+    #showcase p {
+      font-size:20px;
+    }
+
+    /* NEWSLETTER */
+    #newsletter {
+      background-color: darkgrey;
+      color:white;
+      padding:15px;
+    }
+    #newsletter h1 {
+      float: left;
+    }
+    #newsletter form {
+      margin-top:15px;
+      float: right;
+    }
+    #newsletter input[type="email"]{
+      width:250px;
+      height:25px;
+      padding:6px;
+
+    }
+
+
+    /* BOXES*/
+    #boxes {
+      margin-top:30px;
+      text-align: center;
+    }
+    #boxes .box{
+      width:30%;
+      float: left;
+      padding:10px;
+    }
+    #boxes img{
+      width:90px;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top:30px;
+      padding:20px;
+      background: orange;
+      text-align: center;
+    }
+
+    /* MEDIA QUERIES */
+
+    @media(max-width: 768px){
+      header #branding, header nav, header li,
+      #newsletter h1, #newsletter form,
+      #newsletter input[type="email"],
+      #boxes .box {
+        float:none;
+        text-align: center;
+        width:100%;
+      }
+      nav ul {
+        margin-bottom:15px;
+      }
+      .button_1{
+        width:100%;
+        margin-top:5px;
+        padding:6px;
+      }
+      .container{
+        overflow: auto;
+      }
+    }
+
+    @media(max-width: 380px){
+      #showcase h1 {
+        font-size: 40px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span id="highlight">Acme</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1> Subscribe to our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Your Email..."></input>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="img/logo_html.png" />
+          <h3>HTML5 Markup</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/logo_css.png" />
+          <h3>CSS3 Styling</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/logo_brush.png" />
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p> Acme Web Design, Copyright &copy; 2017</p>
+    </footer>
+
+
+
+  </body>
+</html>
